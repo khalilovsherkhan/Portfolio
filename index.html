@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"  crossorigin>
     <link href="https://fonts.googleapis.com/css2?
     family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
       
@@ -45,8 +46,10 @@
 
     <!--hero-->
     <section class="hero" id="home">
-        <div class="main-content">
+        <!-- <video src="22.mp4" autoplay controls width="500" height="450"></video> -->
+        <div class="main-content" data-aos="fade-in">
             <h4>Hi, Thero</h4>
+            
             <h1> I'm <span>SHERXAN</span></h1>
             <p>Lorem ipsum dolor sit amet, consecteter adipiscing alit 
             fames turpis pretium bibenddum nisl est sagittis aliquam 
@@ -69,10 +72,10 @@
     </section>
    <!---about-->
    <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in-down">
             <img src="1.jpg" alt="">
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="zoom-in-up">
             <h2>I am Product <span>Designer </span> <br> & Web Developer
             </h2>
             <div class="exp-area">
@@ -109,7 +112,7 @@
    </section>
     <!---about-->
     <section class="services" id="services">
-        <div class="center-text">
+        <div class="center-text" >
             <h2>My  <span>Services</span></h2>
         </div>
         <div class="box">
@@ -272,6 +275,18 @@
     </div>  
     <!---js link-->
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
+    </script>
+    <script>
+        AOS.init(
+
+        {
+            offset: 500,
+            duration: 1600,
+        }
+        
+        );
+    </script>
 
 </body>
 </html>
